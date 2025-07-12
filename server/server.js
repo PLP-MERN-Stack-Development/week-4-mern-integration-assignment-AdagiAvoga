@@ -1,19 +1,23 @@
 // server.js - Main server file for the MERN blog application
+require('dotenv').config();
+
 
 // Import required modules
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const dotenv = require('dotenv');
 const path = require('path');
 
-// Import routes
-const postRoutes = require('./routes/posts');
-const categoryRoutes = require('./routes/categories');
-const authRoutes = require('./routes/auth');
+// Import models
+const Category = require('./models/Category');
+const Post = require('./models/Post');
 
-// Load environment variables
-dotenv.config();
+// Import routes
+const postRoutes = require('./routes/postRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
+const authRoutes = require('./routes/authRoutes');
+
+
 
 // Initialize Express app
 const app = express();

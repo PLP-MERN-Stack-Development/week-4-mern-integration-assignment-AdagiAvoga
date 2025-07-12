@@ -76,4 +76,40 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [Express.js Documentation](https://expressjs.com/)
 - [React Documentation](https://react.dev/)
 - [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+- [Mongoose Documentation](https://mongoosejs.com/docs/)  
+
+# MERN Stack Blog App
+
+A full-stack blog application built using MongoDB, Express.js, React.js, and Node.js.
+
+---
+
+## Features
+- Create, edit and delete blog posts
+- View single and all posts
+- Manage categories
+- User categories
+- User authentication (register, login)
+- Image uploads (local)
+- Search, filter and paginate posts
+- Comment on blog posts.
+
+---
+
+### Technologies used
+
+- **Frontend:** React (Vite), Tailwind CSS, React Router
+- **Backend:** Node.js, Express.js, Mongoose
+- **Database:**  MongoDB
+- **Authentication:** JWT
+-**File Uploads:** Multer
+
+---
+cd server
+pnpm install
+cp .env
+pnpm run dev
+
+cd client
+pnpm install
+pnpm run dev
